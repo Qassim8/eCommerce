@@ -1,20 +1,25 @@
 import { useState } from "react";
-import { FaList } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router";
+import LogoIcon from "/logo-tree.png";
 
 const MenuNav = ({ isContainer }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="py-4 bg-gray-900">
-      <div className="">
+      <div className="flex md:hidden justify-between items-center px-3">
+        <div className="flex items-center gap-1">
+          <img className="w-6 object-contain" src={LogoIcon} />
+          <h2 className="text-2xl text-slate-300 font-medium">Ecobazar</h2>
+        </div>
         <button
-          className="lg:hidden text-white text-2xl block mx-auto"
+          className="md:hidden text-white text-2xl block ps-3"
           onClick={() => setOpen(!open)}
         >
-          <FaList />
+          <RxHamburgerMenu />
         </button>
       </div>
 

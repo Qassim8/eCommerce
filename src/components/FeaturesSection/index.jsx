@@ -1,7 +1,4 @@
-import React from "react";
 import { BsBoxSeam } from "react-icons/bs";
-import { FaBox, FaHeadphones, FaShoppingBag } from "react-icons/fa";
-import { FaTruckFast } from "react-icons/fa6";
 import { LiaShoppingBagSolid, LiaTruckSolid } from "react-icons/lia";
 import { TbHeadset } from "react-icons/tb";
 
@@ -30,8 +27,8 @@ const Featuers = () => {
   ];
   return (
     <section className="py-3">
-      <div className="container mx-auto">
-        <div className="bg-white p-10 shadow-lg rounded-md grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div className="container mx-auto px-3 md:px-0">
+        <div className="bg-white p-10 shadow-lg rounded-md grid md:grid-cols-4 gap-5">
           {features.map(({ icon, title, description }, id) => (
             <div key={id} className="flex items-center gap-3">
               <div className="text-(--main-color) text-4xl">{icon}</div>

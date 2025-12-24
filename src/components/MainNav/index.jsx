@@ -6,7 +6,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 const MainNav = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-5 items-center justify-between py-6">
-      <div className="flex gap-2 items-center">
+      <div className="hidden md:flex gap-2 items-center">
         <img className="w-full object-contain" src={LogoIcon} />
         <h2 className="text-3xl font-medium">Ecobazar</h2>
       </div>
