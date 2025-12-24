@@ -1,0 +1,7 @@
+@import "tailwindcss";
+/* @plugin "daisyui"; */
+
+
+:root {
+    --main-color: rgba(0, 178, 7, 1);
+}
